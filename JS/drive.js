@@ -102,7 +102,7 @@ const searchSubmit = () => {
     l('SSrun');
     document.getElementById('js-youtube-search-form').addEventListener('submit', (event) => {
         event.preventDefault();
-        document.getElementById('spy-label').style['display'] = "inline";
+        document.getElementById('spy-label').style['display'] = "none";
         bufer = [];
         l('SSsubm');
         let numberOfDisplayed = rollsOnPage();

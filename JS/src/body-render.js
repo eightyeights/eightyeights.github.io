@@ -5,7 +5,7 @@ export default class {
                 <h1 class="main-header">YouTube Spy</h1>
                 <section id="form-entry">
                     <form id="js-youtube-search-form">
-                        <label class="entry-label" for="search-entry" id="spy-label"><b>SPY MESSAGE....</b></label>
+                        <label class="entry-label" for="search-entry" id="spy-label" hidden><b>SPY MESSAGE....</b></label>
                         <input type="text" name="search-entry" id="search-entry" class="search-input" placeholder="e.g., qwerty" required>
                         <button type="submit" class="search-button">Search</button>
                     </form>

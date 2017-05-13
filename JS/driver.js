@@ -168,7 +168,7 @@
 	    l('SSrun');
 	    document.getElementById('js-youtube-search-form').addEventListener('submit', function (event) {
 	        event.preventDefault();
-	        document.getElementById('spy-label').style['display'] = "inline";
+	        document.getElementById('spy-label').style['display'] = "none";
 	        bufer = [];
 	        l('SSsubm');
 	        var numberOfDisplayed = (0, _rollsOnPage2.default)();
@@ -554,7 +554,7 @@
 	var _class = function _class() {
 	    _classCallCheck(this, _class);
 	
-	    document.querySelector('body').innerHTML = '<div class="container-1">\n                <h1 class="main-header">YouTube Spy</h1>\n                <section id="form-entry">\n                    <form id="js-youtube-search-form">\n                        <label class="entry-label" for="search-entry" id="spy-label"><b>SPY MESSAGE....</b></label>\n                        <input type="text" name="search-entry" id="search-entry" class="search-input" placeholder="e.g., qwerty" required>\n                        <button type="submit" class="search-button">Search</button>\n                    </form>\n                </section>\n                <section id="search-results" class="search-results" hidden>\n                    <!--search-results-->\n                    <div class="row-1" id="row">\n                    </div>\n                    <div class="tooltip" id="tooltip-animation">\n                    </div>\n                    <!--pagination-->  \n                    <nav aria-label="Page navigation" id="navPages">\n                    </nav>\n                </section>\n                <section id="no-results" hidden>\n                    <p>Sorry, no results were found for your query.</p>\n                </section>\n            </div>';
+	    document.querySelector('body').innerHTML = '<div class="container-1">\n                <h1 class="main-header">YouTube Spy</h1>\n                <section id="form-entry">\n                    <form id="js-youtube-search-form">\n                        <label class="entry-label" for="search-entry" id="spy-label" hidden><b>SPY MESSAGE....</b></label>\n                        <input type="text" name="search-entry" id="search-entry" class="search-input" placeholder="e.g., qwerty" required>\n                        <button type="submit" class="search-button">Search</button>\n                    </form>\n                </section>\n                <section id="search-results" class="search-results" hidden>\n                    <!--search-results-->\n                    <div class="row-1" id="row">\n                    </div>\n                    <div class="tooltip" id="tooltip-animation">\n                    </div>\n                    <!--pagination-->  \n                    <nav aria-label="Page navigation" id="navPages">\n                    </nav>\n                </section>\n                <section id="no-results" hidden>\n                    <p>Sorry, no results were found for your query.</p>\n                </section>\n            </div>';
 	};
 	
 	exports.default = _class;
