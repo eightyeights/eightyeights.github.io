@@ -7,7 +7,7 @@ body {
     height: 94vh;
     background-image: url(../img/spy3.svg);
     background-repeat: no-repeat;
-    background-color: #1d9efc;
+    background-color: #dee0a3;
  
 }
 
@@ -31,13 +31,13 @@ body {
 
 .search-input {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 6px;
     outline: 0;
 }
 
 .search-button {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     outline: 0;
 }
 
@@ -46,7 +46,7 @@ body {
     height: 69vh;
     margin-top: 7vh;
     background: #ccc;
-    border: 5px solid rgb(44, 152, 212);
+    border: 5px solid rgb(197, 197, 36);
     text-align: center;
 }
 
@@ -138,7 +138,7 @@ body {
 
 .animated-tooltip {
 	  transform: scaleX(1);
-	  bottom: 7.5vh;
+	  bottom: 7.5%;;
 }
 
 /*bootstrap styles*/
