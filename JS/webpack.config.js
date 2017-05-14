@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack')
 
 module.exports = {
-    entry: './drive.js',
+    entry: './source/drive.js',
     output: {
         path: __dirname,
         filename: './driver.js'
