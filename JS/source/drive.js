@@ -4,7 +4,7 @@ import getDataFromApi from '../components/get-data-from-api';
 import YTWorker from '../components/YT-simple-class';
 
 let NEXT_TOKEN = '';
-let nowPage = 1;
+let nowPage;
 let bufer = [];
 let leftest;
 let startX;
@@ -17,7 +17,7 @@ const YT = new YTWorker();
 
 document.getElementById('js-youtube-search-form').addEventListener('submit', (event) => {
     event.preventDefault();
-
+    nowPage = 1;
     const userEntry = document.querySelector('#search-entry').value;
 
     const pushToBufer = (data) => {
@@ -153,7 +153,7 @@ document.getElementById('js-youtube-search-form').addEventListener('submit', (ev
         }
     };
 
-    document.getElementById('spy-label').style['display'] = 'none';
+    document.getElementById('spy-label').style.display = 'none';
     numberOfDisplayed = YT.rollsOnPage();
     YT.drawImageTags(numberOfDisplayed);
     document.getElementById('navPages').innerHTML =

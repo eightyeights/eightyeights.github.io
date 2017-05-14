@@ -65,7 +65,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var NEXT_TOKEN = '';
-	var nowPage = 1;
+	var nowPage = void 0;
 	var bufer = [];
 	var leftest = void 0;
 	var startX = void 0;
@@ -76,7 +76,7 @@
 	
 	document.getElementById('js-youtube-search-form').addEventListener('submit', function (event) {
 	    event.preventDefault();
-	
+	    nowPage = 1;
 	    var userEntry = document.querySelector('#search-entry').value;
 	
 	    var pushToBufer = function pushToBufer(data) {
@@ -207,7 +207,7 @@
 	        }
 	    };
 	
-	    document.getElementById('spy-label').style['display'] = 'none';
+	    document.getElementById('spy-label').style.display = 'none';
 	    numberOfDisplayed = YT.rollsOnPage();
 	    YT.drawImageTags(numberOfDisplayed);
 	    document.getElementById('navPages').innerHTML = '<ul class="pagination" id="pagination">\n            <li id="btn-previous" class="disabled">\n                <a href="#" aria-label="Previous">\n                    <span aria-hidden="true">&laquo;</span>\n                </a>\n            </li>\n            <li id="page-link-1" class="active">\n                <a href="#">1</a></li><li id="page-link-2">\n                <a href="#">2</a></li><li id="page-link-3">\n                <a href="#">3</a></li><li id="page-link-4">\n                <a href="#">4</a></li><li id="page-link-5">\n                <a href="#">5</a></li><li  id="btn-next">\n                <a href="#" aria-label="Next">\n                    <span aria-hidden="true">&raquo;</span>\n                </a>\n            </li>\n        </ul>';
